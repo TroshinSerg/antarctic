@@ -1,3 +1,46 @@
 .toggle {
   display: none;
 }
+
+.no-js .toggle {
+  display: none;
+}
+
+@media screen and (max-width: $mobile-width) {
+  .toggle {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 24px;
+    height: 14px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .toggle:hover,
+  .toggle:focus {
+    outline: none;
+    opacity: 0.9;
+  }
+
+  .toggle__icon {
+    display: block;
+    fill: $light-color;
+  }
+
+  .toggle__icon--close {
+    display: none;
+    margin-left: auto;
+    fill: $base-color;
+  }
+
+  .toggle--opened .toggle__icon--menu {
+    display: none;
+  }
+
+  .toggle--opened .toggle__icon--close {
+    display: block;
+  }
+}
