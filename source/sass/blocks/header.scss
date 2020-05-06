@@ -1,0 +1,50 @@
+.header {
+  min-height: 650px;
+  padding: 35px 0;
+  background-color: $dark-blue-color;
+  background-image: url("../img/header-bg.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.header__top {
+  display: flex;
+  margin-bottom: 191px;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__navigation {
+  align-self: center;
+}
+
+.header__offer {
+  padding-left: 95px;
+}
+
+.header__heading {
+  margin: 0 0 12px;
+  font-size: 54px;
+  line-height: 1.22;
+  color: $light-color;
+}
+
+.header__subheading {
+  font-size: 20px;
+  line-height: 1.2;
+  color: $light-color;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .header {
+    background-image: url("../img/header-bg-tablet.jpg");
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .header {
+    background-image: url("../img/header-bg-mobile.jpg");
+  }
+}

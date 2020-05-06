@@ -1,0 +1,31 @@
+.navigation {}
+
+.navigation__list {
+  list-style: none;
+  margin: 0 0 4px 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation__item {
+  margin-left: 33px;
+}
+.navigation__item:first-child {
+  margin-left: 0;
+}
+
+.navigation__link {
+  font-size: 16px;
+  line-height: 1.2;
+  color: $light-color;
+  font-weight: 500;
+}
+
+.navigation__link:focus,
+.navigation__link:hover {
+  outline: none;
+  text-decoration: underline;
+}
+.navigation__link:active {
+  opacity: .8;
+}
