@@ -1,0 +1,161 @@
+.cruises {
+  padding: 110px 0 120px;
+}
+
+.cruises__heading {
+  margin: 0 0 50px;
+  text-align: center;
+}
+
+.cruises__list {
+  list-style: none;
+  margin: -2.587% 0 0 -2.587%;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cruises__item {
+  position: relative;
+  z-index: 1;
+  width: calc(25% - 2.587%);
+  height: 386px;
+  margin: 2.587% 0 0 2.587%;
+  overflow: hidden;
+}
+
+.cruises__item-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 29px 9.616% 35px;
+  transform: translateY(80%);
+  color: $light-color;
+}
+
+.cruises__item:hover .cruises__item-content {
+  background-color: $base-color;
+  transform: translateY(0);
+}
+
+.cruises__item:hover .cruises__item-heading {
+  margin-bottom: 15px;
+}
+
+.cruises__item-heading {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cruises__item-btn {
+  display: block;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: $base-color;
+  text-align: center;
+  font-weight: 600;
+  background-color: $light-color;
+}
+
+.cruises__item-btn:hover,
+.cruises__item-btn:focus {
+  outline: none;
+  background-color: darken($light-color, 10%);
+}
+
+.cruises__item-btn:active {
+  background-color: darken($light-color, 15%);
+}
+
+.cruises__item-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+}
+
+.cruises__item-info {
+  margin: 0 0 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.cruises__item-info dt {
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+.cruises__item-info dd {
+  margin: 0;
+  color: $grey-color;
+}
+
+.cruises__item-info dd + dt {
+  margin-top: 12px;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .cruises {
+    padding: 91px 0 100px;
+  }
+
+  .cruises__list {
+    max-width: 648px;
+    margin: -30px auto 0;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .cruises__item {
+    width: 100%;
+    max-width: 309px;
+    margin: 30px 0 0 0;
+  }
+
+  .cruises__item-content {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 23px;
+  }
+
+  .cruises__item-heading {
+    margin-bottom: 26px;
+  }
+
+  .cruises__item:hover .cruises__item-content {
+    padding-top: 29px;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .cruises {
+    padding: 57px 0 66px;
+  }
+
+  .cruises__list {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .cruises__heading {
+    margin-bottom: 62px;
+  }
+
+  .cruises__item {
+    margin: 30px auto 0;
+  }
+
+  .cruises__item-content {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 33px;
+  }
+
+  .cruises__item:hover .cruises__item-content {
+    padding-top: 29px;
+  }
+}
