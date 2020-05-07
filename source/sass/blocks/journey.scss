@@ -30,10 +30,9 @@
   left: -97px;
 }
 
-
 @media screen and (max-width: $tablet-width) {
   .journey {
-    padding: 92px 0;
+    padding: 92px 0 94px;
   }
 
   .journey__heading {
@@ -60,7 +59,7 @@
 
 @media screen and (max-width: $mobile-width) {
   .journey {
-    padding: 57px 0;
+    padding: 57px 0 66px;
   }
 
   .journey__inner {
