@@ -270,6 +270,29 @@
         </ul>
       </div>
     </section>
+    <section class="booking">
+      <div class="booking__inner container">
+        <div class="booking__content">
+          <h2 class="booking__heading heading">Раннее бронирование</h2>
+          <div class="booking__text">Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</div>
+        </div>
+        <form class="booking__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="booking__form-caption">Оставьте заявку и мы свяжемся с вами в ближайшее время</div>
+          <label class="booking__form-label" aria-label="Ваше имя">
+            <input class="booking__form-field" type="text" name="name" placeholder="Ваше имя" requred>
+          </label>
+          <label class="booking__form-label" aria-label="Ваш телефон">
+            <input class="booking__form-field" type="tel" name="name" placeholder="Ваш телефон" requred>
+          </label>
+          <label class="booking__form-label" aria-label="Ваш email">
+            <input class="booking__form-field" type="email" name="name" placeholder="Ваш email" requred>
+          </label>
+          <input class="visually--hidden" id="consent" type="checkbox" name="consent" required checked>
+          <label class="booking__form-consent" for="consent">Я согласен на обработку моих персональных данных</label>
+          <button class="booking__form-btn" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__inner container">
@@ -317,6 +340,9 @@
       </ul>
     </div>
   </footer>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+
   <script src="js/script.js"></script>
 </body>
 </html>
