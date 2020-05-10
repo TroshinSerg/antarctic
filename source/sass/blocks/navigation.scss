@@ -49,16 +49,16 @@
     right: 0;
     padding: 87px 15px 40px;
     background-color: $smoky-color;
+
+    &--shown {
+      display: block;
+    }
   }
 
   .no-js .navigation {
     display: block;
     position: static;
     width: 100%;
-  }
-
-  .navigation--shown {
-    display: block;
   }
 
   .navigation__list {

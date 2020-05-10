@@ -6,14 +6,12 @@
 
 @media screen and (max-width: $tablet-width) {
   .container {
-    max-width: $tablet-width;
     padding: 0 45px;
   }
 }
 
 @media screen and (max-width: $mobile-width) {
   .container {
-    max-width: $mobile-width;
     padding: 0 15px;
   }
 }

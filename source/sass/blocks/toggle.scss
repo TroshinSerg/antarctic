@@ -17,6 +17,14 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+
+    &--opened .toggle__icon--menu {
+      display: none;
+    }
+
+    &--opened .toggle__icon--close {
+      display: block;
+    }
   }
 
   .toggle:hover,
@@ -34,13 +42,5 @@
     display: none;
     margin-left: auto;
     fill: $base-color;
-  }
-
-  .toggle--opened .toggle__icon--menu {
-    display: none;
-  }
-
-  .toggle--opened .toggle__icon--close {
-    display: block;
   }
 }

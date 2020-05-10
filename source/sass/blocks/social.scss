@@ -37,18 +37,20 @@
     margin-right: 23px;
   }
 
-  .social__image--fb {
-    width: 9px;
-    height: auto;
-  }
+  .social__image {
+    &--fb {
+      width: 9px;
+      height: auto;
+    }
 
-  .social__image--inst {
-    width: 16px;
-    height: auto;
-  }
+    &--inst {
+      width: 16px;
+      height: auto;
+    }
 
-  .social__image--tw {
-    width: 16px;
-    height: auto;
+    &--tw {
+      width: 16px;
+      height: auto;
+    }
   }
 }

@@ -17,14 +17,14 @@
   .logo {
     position: relative;
     z-index: 1;
+
+    &--dark {
+      fill: $base-color;
+    }
   }
 
   .no-js .logo {
     position: absolute;
-    fill: $base-color;
-  }
-
-  .logo--dark {
     fill: $base-color;
   }
 
