@@ -32,4 +32,5 @@ function onAnchorClick(evt) {
     behavior: 'smooth',
     block: 'start'
   });
+  evt.currentTarget.blur();
 }

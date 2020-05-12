@@ -3,7 +3,7 @@
   padding: 35px 0;
   background-color: $dark-blue-color;
   background-image: url("../img/header-bg.jpg");
-  background-size: 1366px 650px;
+  background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -11,7 +11,6 @@
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .header {
     background-image: url("../img/header-bg@2x.jpg");
-    background-size: 1366px 650px;
   }
 }
 
@@ -50,14 +49,12 @@
   .header {
     min-height: 638px;
     padding: 28px 0;
-    background-size: 768px 638px;
     background-image: url("../img/header-bg-tablet.jpg");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .header {
       background-image: url("../img/header-bg-tablet@2x.jpg");
-      background-size: 768px 638px;
     }
   }
 

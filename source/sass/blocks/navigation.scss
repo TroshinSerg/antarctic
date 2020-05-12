@@ -28,6 +28,7 @@
 
 .navigation__link:active {
   opacity: 0.8;
+  text-underline: none;
 }
 
 @media screen and (max-width: $tablet-width) {
