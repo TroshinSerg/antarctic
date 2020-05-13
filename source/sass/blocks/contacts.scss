@@ -58,10 +58,21 @@
 
   &--phone {
     margin-bottom: 0;
+    color: $base-color;
 
     &::before {
       height: 18px;
       background-image: url("../img/icon-phone.svg");
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: lighten($base-color, 20%);
+    }
+
+    &:active {
+      color: lighten($base-color, 30%);
     }
   }
 }

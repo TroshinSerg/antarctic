@@ -4,10 +4,11 @@
   padding: 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social__item {
-  margin-right: 33px;
+  margin: 5px 33px 5px 0;
 }
 
 .social__item:last-child {

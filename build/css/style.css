@@ -400,7 +400,9 @@ a {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .navigation__item {
   margin-left: 33px; }
@@ -437,7 +439,7 @@ a {
     left: 0;
     right: 0;
     padding: 87px 15px 40px;
-    background-color: #e5e5e5; }
+    background-color: #f9fbfd; }
     .navigation--shown {
       display: block; }
   .no-js .navigation {
@@ -511,10 +513,12 @@ a {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .social__item {
-  margin-right: 33px; }
+  margin: 5px 33px 5px 0; }
 
 .social__item:last-child {
   margin-right: 0; }
@@ -999,6 +1003,7 @@ a {
   padding: 14px 16px 13px;
   font-size: 14px;
   border: none;
+  border-radius: 0;
   background-color: #f9fbfd; }
   .booking__form-field:hover, .booking__form-field:focus {
     outline: none;
@@ -1186,10 +1191,16 @@ input:focus + .booking__form-consent::before,
     height: 22px;
     background-image: url("../img/icon-pin.svg"); }
   .contacts__info--phone {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: #011c40; }
     .contacts__info--phone::before {
       height: 18px;
       background-image: url("../img/icon-phone.svg"); }
+    .contacts__info--phone:hover, .contacts__info--phone:focus {
+      outline: none;
+      color: #0348a4; }
+    .contacts__info--phone:active {
+      color: #035ed7; }
 
 @media screen and (max-width: 1023px) {
   .contacts {
@@ -1252,7 +1263,11 @@ input:focus + .booking__form-consent::before,
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
 
 .footer__item {
   margin-right: 33px; }
@@ -1273,6 +1288,9 @@ input:focus + .booking__form-consent::before,
 
 .footer__link:active {
   opacity: 0.8; }
+
+.footer__social {
+  margin-left: 30px; }
 
 @media screen and (max-width: 1023px) {
   .footer {
@@ -1316,7 +1334,9 @@ input:focus + .booking__form-consent::before,
     margin-bottom: 0; }
   .footer__link {
     font-size: 12px;
-    line-height: 1.25; } }
+    line-height: 1.25; }
+  .footer__social {
+    margin-left: 0; } }
 
 .header {
   min-height: 650px;

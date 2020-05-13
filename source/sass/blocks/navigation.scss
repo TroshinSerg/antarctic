@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation__item {
@@ -49,7 +50,7 @@
     left: 0;
     right: 0;
     padding: 87px 15px 40px;
-    background-color: $smoky-color;
+    background-color: $light-color;
 
     &--shown {
       display: block;
